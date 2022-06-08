@@ -1,11 +1,20 @@
 {
   "name": "artillery-tailwind",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Static generation of Tailwind build.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "output": "npx tailwindcss -i ./src/global.css -o ./dist/build.css --minify"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Artillery",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@artilleryio/alpha-centauri-theme": "^0.1.8"
+  }
 }
